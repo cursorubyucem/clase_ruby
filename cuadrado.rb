@@ -1,7 +1,10 @@
+# Sobrecarga de métodos (methods overloading)
+# Las clases en Ruby sólo pueden tener un método con un nombre dado. Para tener métodos "distintos" 
+# con el mismo nombre, se puede jugar con el número de argumentos:
 
 class Cuadrado
 
-	def initialize(*args)
+	def initialize(*args) # * implica número variable de argumentos
 		if args.size < 2 || args.size > 3
 			puts 'Error: Este metodo toma dos o tres argumentos'
 		else
